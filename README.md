@@ -1,5 +1,5 @@
 # Nutrition Facts for McDonald's Menu
-
+![McDonald's Meal](gambar/meal.jpeg)
 ## Background
 Ray Kroc wanted to build a restaurant system that would be famous for providing food of consistently high quality and uniform methods of preparation. He wanted to serve burgers, buns, fries and beverages that tasted just the same in Alaska as they did in Alabama. To achieve this, he chose a unique path: persuading both franchisees and suppliers to buy into his vision, working not for McDonald’s but for themselves, together with McDonald’s. Many of McDonald’s most famous menu items – like the Big Mac, Filet-O-Fish, and Egg McMuffin – were created by franchisees.
 
@@ -53,6 +53,7 @@ From the information above, the [recommended](https://www.nhs.uk/common-health-q
 dfsortmeall=dfmeall.sort_values('Calories')
 dfsortmeall.tail(3)
 ```
+![Largest Calories](gambar/least1.jpg)<br><br>
 From the code above, we can know that the three menu that have biggest value of calories are Chciken McNuggets (1880 calories), Big Breakfast with Hotcakes (Large Biscuit) (1150 calories), and Big Breakfast with Hotcakes (Regular Biscuit) (1090 calories). So, we must order at least more than one menu to meet one day’s nutritional requirements. For women, the one’s day nutritional requirement is 2000. Therefore we need 120 calories more to make it 2000. Using:
 ```
 dfsortmeall[(dfsortmeall['Calories'].between(110,130))]
